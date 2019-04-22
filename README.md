@@ -19,6 +19,4 @@ Coming Soon.
 
 ## License
 
-> All code and documentation are (c) 2019 Siddharth Gujrathi and released under the [MIT License](https://github.com/sidgujrathi/mongoose-toolkit/blob/master/LICENSE). 
-<br/>
-> A copy of the MIT License [is also included](LICENSE.txt).
+> All code and documentation are (c) 2019 Siddharth Gujrathi and released under the [MIT License](https://github.com/sidgujrathi/mongoose-toolkit/blob/master/LICENSE). A copy of the MIT License [is also included](LICENSE.txt).
