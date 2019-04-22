@@ -1,0 +1,36 @@
+{
+  "name": "mongoose-toolkit",
+  "version": "1.0.0",
+  "description": "Set of Mongoose Plugins, Instance methods, Statics, Query Helpers, and Javascript helpers.",
+  "main": "./lib/index",
+  "types": "./lib/index",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidgujrathi/mongoose-toolkit.git"
+  },
+  "keywords": [
+    "mongoose",
+    "helpers",
+    "mongoose-helpers",
+    "mongodb",
+    "json",
+    "stringify",
+    "normalize"
+  ],
+  "author": "Siddharth Gujrathi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sidgujrathi/mongoose-toolkit/issues"
+  },
+  "homepage": "https://github.com/sidgujrathi/mongoose-toolkit#readme",
+  "devDependencies": {
+    "@types/node": "^11.13.6",
+    "tslint": "^5.16.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.4.4"
+  }
+}

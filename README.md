@@ -1,8 +1,8 @@
 # mongoose-toolkit
 
-A swiss ``toolkit`` for ``Mongoose``
+Swiss ``toolkit`` for ``Mongoose``
 
-A set of [Mongoose Plugins](https://mongoosejs.com/docs/plugins.html), [Instance methods](https://mongoosejs.com/docs/guide.html#methods), [Statics](https://mongoosejs.com/docs/guide.html#statics), [Query Helpers](https://mongoosejs.com/docs/guide.html#query-helpers), and Javascript helpers.
+Set of [Mongoose Plugins](https://mongoosejs.com/docs/plugins.html), [Instance methods](https://mongoosejs.com/docs/guide.html#methods), [Statics](https://mongoosejs.com/docs/guide.html#statics), [Query Helpers](https://mongoosejs.com/docs/guide.html#query-helpers), and Javascript helpers.
 
 ## Documentation
 Coming Soon.
