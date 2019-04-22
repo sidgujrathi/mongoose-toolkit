@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "npm test && tsc"
   },
   "repository": {
     "type": "git",
@@ -38,5 +38,6 @@
     "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",
     "typescript": "^3.4.4"
-  }
+  },
+  "prepare": "npm run build"
 }
