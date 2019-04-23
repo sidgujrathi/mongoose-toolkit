@@ -1,11 +1,12 @@
 import { Plugins } from '../lib';
+import { getConnection } from './db.connection';
+getConnection().then(() => {
 
-describe('Plugin: Output Serialization', () => {
+  describe('Plugin: Output Serialization', () => {
     test('Plugin.serialize should be imported as function', () => {
-        expect(typeof Plugins.serialize).toBe('function');
+      expect(typeof Plugins.serialize).toBe('function');
     });
 
-    test('Plugin.serialize should return object', () => {
-        expect(typeof Plugins.serialize()).toBe("object");
-    });
-});
+  });
+
+}).catch((err: any) => console.error({ err }));
