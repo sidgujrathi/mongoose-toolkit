@@ -18,22 +18,23 @@ const serialize = function (schema: ISchema) {
     (doc: any, ret: any, options: any): any;
     (arg0: any, arg1: any, arg2: any): void;
   } | null = null;
+  if (schema.options) {
+    if (schema.options.toJSON && schema.options.toJSON.transform) {
+      transform = schema.options.toJSON.transform;
+    }
 
-  if (schema.options.toJSON && schema.options.toJSON.transform) {
-    transform = schema.options.toJSON.transform;
+    // Extend toJSON options
+    schema.options.toJSON = Object.assign(schema.options.toJSON || {}, {
+      transform(doc: any, ret: any, options: any) {
+        // serialize document
+        serializer(ret);
+        // Call custom transform if present
+        if (transform) {
+          return transform(doc, ret, options);
+        }
+      },
+    });
   }
-
-  // Extend toJSON options
-  schema.options.toJSON = Object.assign(schema.options.toJSON || {}, {
-    transform(doc: any, ret: any, options: any) {
-      // serialize document
-      serializer(ret);
-      // Call custom transform if present
-      if (transform) {
-        return transform(doc, ret, options);
-      }
-    },
-  });
 };
 
 export default serialize;
