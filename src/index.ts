@@ -1,1 +1,1 @@
-export const greeter = (name: string) => `Hello ${name}`;
+export * from './Plugins'; 
