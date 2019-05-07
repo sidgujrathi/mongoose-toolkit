@@ -10,7 +10,12 @@
   "scripts": {
     "test": "jest",
     "build": "npm test && tsc",
-    "build:ts": "tsc --watch"
+    "build:ts": "tsc --watch",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
