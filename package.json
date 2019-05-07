@@ -1,6 +1,6 @@
 {
   "name": "mongoose-toolkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set of Mongoose Plugins, Instance methods, Statics, Query Helpers, and Javascript helpers.",
   "main": "./lib/index",
   "types": "./lib/index",
