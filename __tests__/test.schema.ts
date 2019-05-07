@@ -1,5 +1,5 @@
 import { Schema, Mongoose, model } from 'mongoose';
-import { Plugins } from '../lib';
+import { PLUGINS } from '../lib';
 const testSchema = new Schema(
   {
     firstname: { type: String },
@@ -13,7 +13,7 @@ testSchema.virtual('fullName').get(function (this: any) {
   return `${this.firstname} ${this.lastname}`;
 });
 
-testSchema.plugin(Plugins.serialize);
+testSchema.plugin(PLUGINS.serialize);
 
 export const userModel = model('UserTest', testSchema);
 

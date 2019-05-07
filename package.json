@@ -10,10 +10,11 @@
   "scripts": {
     "test": "jest",
     "build": "npm test && tsc",
+    "lint": "tslint -p tsconfig.json",
     "build:ts": "tsc --watch",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
+    "preversion": "tslint",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },

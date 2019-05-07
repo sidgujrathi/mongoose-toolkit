@@ -1,4 +1,4 @@
-import { Plugins } from '../lib';
+import { PLUGINS } from '../lib';
 import { getConnection } from './db.connection';
 import { userModel } from './test.schema';
 
@@ -11,7 +11,7 @@ describe('Plugins', () => {
   describe('Output Serialization', () => {
 
     test('Plugin.serialize should be imported as function', () => {
-      expect(typeof Plugins.serialize).toBe('function');
+      expect(typeof PLUGINS.serialize).toBe('function');
     });
 
     test('Output after applying serialize should prevent virtuals via serialze', (done) => {

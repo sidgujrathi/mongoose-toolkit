@@ -1,5 +1,5 @@
-import serialize from './_Serialize';
+import { default as serialize } from './_Serialize';
 
-export const Plugins = {
-    serialize
-}
+export const PLUGINS = {
+  serialize,
+};
